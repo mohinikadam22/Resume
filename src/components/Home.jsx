@@ -7,6 +7,7 @@ import Type from "./Type";
 
 function Home() {
   return (
+    <>
     <section>
       <Container fluid className="home-section" id="home">
         {/* <Particle /> */}
@@ -39,10 +40,13 @@ function Home() {
               />
             </Col> 
           </Row>
+          <Home_bootom/>
         </Container>
+      
       </Container>
-     <Home_bootom/>
+
     </section>
+    </>
   );
 }
 

@@ -23,7 +23,10 @@ html {
   button:focus {
     box-shadow: none !important;
   }
-  
+  .resume1{
+    height: 500px!important;
+    width: 500px!important;
+  }
   /* --------- */
   /*  Preloader */
   /* --------- */
@@ -317,6 +320,7 @@ html {
   .myAvtar {
     justify-content: center !important;
     padding-top: 9em !important;
+    padding-right: 5em!important;
   }
   
   @media (max-width: 767px) {
@@ -329,13 +333,14 @@ html {
   .home-about-section {
     position: relative;
     color:white;
-    background:url("background.jpg") no-repeat;
-    background-size: cover;
+    /* background:url("background.jpg") no-repeat; */
+    /* background-size: cover; */
     /* background-repeat: ; */
     /* background-image: var(--section-background-color) !important; */
     padding-bottom: 70px !important;
     padding-top: 70px !important;
   }
+ 
   
   .home-about-description {
     color: white !important;

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 // import Particle from "../Particle";
-import pdf from "./Holiday Calender 2024.pdf";
+// import pdf from "./Mohini (Resume) Final.pdf";
+import pdf from "./Screenshot 2024-04-29 154041.png"
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -32,11 +33,12 @@ function Resume() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
+          <img src={pdf} style={{ width: "700px", height:"650px",marginLeft:"50px"}} ></img>
+          {/* <Document file={pdf} className="d-flex justify-content-center">
+            <Page pageNumber={1} scale={width > 786 ? 0.5 : 0.1} />
+          </Document> */}
         </Row>
-
+<br/><br/><br/>
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"

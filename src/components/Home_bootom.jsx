@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from '../woman-8548853_1280.webp';
+import myImg from '../image.png';
 // import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -14,7 +14,12 @@ function Home_bootom() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+        <Col md={4} className="myAvtar">
+            {/* <Tilt> */}
+              <img src={myImg} className="img-fluid" alt="avatar" />
+            {/* </Tilt> */}
+          </Col>
+          <Col md={7} className="home-about-description">
             <h1 style={{ fontSize: "2.6em",color:"white"}}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
@@ -53,13 +58,9 @@ function Home_bootom() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
-            {/* <Tilt> */}
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            {/* </Tilt> */}
-          </Col>
+         
         </Row>
-        <Row>
+        {/* <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
@@ -68,15 +69,16 @@ function Home_bootom() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/mohinikadam22"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  
                 >
                   <AiFillGithub />
                 </a>
               </li>
-              <li className="social-icons">
+              {/* <li className="social-icons">
                 <a
                   href="https://twitter.com/Soumyajit4419"
                   target="_blank"
@@ -85,10 +87,10 @@ function Home_bootom() {
                 >
                   <AiOutlineTwitter />
                 </a>
-              </li>
-              <li className="social-icons">
+              </li> */}
+              {/* <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/mohini-suryawanshi-b02600255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -98,7 +100,7 @@ function Home_bootom() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.linkedin.com/in/mohini-suryawanshi-b02600255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -108,7 +110,7 @@ function Home_bootom() {
               </li>
             </ul>
           </Col>
-        </Row>
+        </Row> */} 
       </Container>
       
     </Container>
